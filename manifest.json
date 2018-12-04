@@ -1,0 +1,27 @@
+{
+  "name": "The Blockchain University screen share",
+  "description": "An extension to allow you to share screen on The Blockchain University",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "extension.js"
+    ],
+    "persistent": false
+  },
+  "icons": {
+    "16": "tbu-16.png",
+    "48": "tbu-48.png",
+    "128": "tbu-128.png"
+  },
+  "externally_connectable": {
+    "matches": [
+      "*://localhost/*",
+      "*://*.theblockchainu.com/*"
+    ]
+  },
+  "permissions": [
+    "desktopCapture",
+    "tabs"
+  ]
+}
